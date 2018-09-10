@@ -6,8 +6,10 @@
   <title></title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
-  <link href="/datapicker/datepicker.min.css" rel="stylesheet" type="text/css">
-  <script src="/datapicker/datepicker.min.js"></script>
+  
+  <script src="/lib/jquery.js"></script>
+  <link  href="/lib/datepicker.min.css" rel="stylesheet">
+  <script src="/lib/datepicker.min.js"></script>
 </head>
 <body>
 <!-- Start your code here -->
@@ -35,7 +37,7 @@
           </div>
           <div class="input_field">
             <!--<span>Когда</span>-->
-            <input type="text" class="datepicker-here" name="to" placeholder="Когда" required>
+            <input data-toggle="datepicker">
           </div>
           <input class="button" type="submit" value="НАЙТИ">
         </form>
