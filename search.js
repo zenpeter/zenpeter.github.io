@@ -1,9 +1,4 @@
-$('[data-toggle="datepicker"]').datepicker();
-$().datepicker({
-    language: 'ru-RU'
-  });
-
-  (function (global, factory) {
+(function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('jquery')) :
     typeof define === 'function' && define.amd ? define(['jquery'], factory) :
     (factory(global.jQuery));
@@ -23,3 +18,9 @@ $().datepicker({
       yearSuffix: ''
     };
   })));
+
+$('[data-toggle="datepicker"]').datepicker();
+$().datepicker({
+    language: 'ru-RU'
+  });
+
