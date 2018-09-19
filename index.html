@@ -2,290 +2,284 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, user-scalable=0" />
   <title></title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" type="text/css" href="/lib/datepicker.css">
-  
-  <script src="/lib/jquery.js"></script>
-  <script src="/"></script>
-  
-  
+  <script src="jquery-3.3.1.min.js"></script>
 </head>
 <body>
-  <!-- Start your code here -->
-  <div class="layout">
-    
-  <!-- SEARCH_SECTION -->
-    <div class="search_section">
-      <div class="content">
-        <div class="header">
-          <div class="title">
-            <h2>Belzd.by</h2>
-            <h1>Расписание поездов</h1>
-          </div>
-          <a href="#">RU</a>
+<!-- Start your code here -->
+<div class="layout">
+  
+<!-- SEARCH_SECTION -->
+  <div class="search_section">
+    <div class="content">
+      <div class="header">
+        <div class="title">
+          <h2>Belzd.by</h2>
+          <h1>Расписание поездов</h1>
         </div>
-        <div>
-          <form action="" class="forms">
+        <a href="#">RU</a>
+      </div>
+      <div>
+        <form action="" class="forms">
+          <div class="input_field">
+            <!--<span>Откуда</span>-->
+            <input type="text" name="from" placeholder="Откуда" autofocus required>
+          </div>
             <div class="input_field">
-              <!--<span>Откуда</span>-->
-              <input type="text" name="from" placeholder="Откуда" autofocus required>
-            </div>
-              <div class="input_field">
-              <!--<span>Куда</span>-->
-              <input type="text" name="to" placeholder="Куда" required>
-            </div>
-            <div id="datepickerContainer" class="input_field date-field">
-              <!--<span>Когда</span>-->
-              
-            </div>
-            <input class="button" type="submit" value="НАЙТИ">
-          </form>
-        </div>
-        <!-- ACCESIBLE VERSION
-        <div class="accessibility">
-          <a href="#"><img src="https://image.ibb.co/nkEtSp/eye.png" class="accessibility-icon" alt="eye" border="0"><span>Версия для слабовидящих</span></a>
-        </div>
-        -->
+            <!--<span>Куда</span>-->
+            <input type="text" name="to" placeholder="Куда" required>
+          </div>
+          <div id="datepickerContainer" class="input_field date-field">
+            <!--<span>Когда</span>-->
+            
+          </div>
+          <input class="button" type="submit" value="НАЙТИ">
+        </form>
       </div>
-    </div> 
-    
-  <!-- REASULTS_SECTION -->
-    <div class="results_section">
-      
-      <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
+      <!-- ACCESIBLE VERSION
+      <div class="accessibility">
+        <a href="#"><img src="https://image.ibb.co/nkEtSp/eye.png" class="accessibility-icon" alt="eye" border="0"><span>Версия для слабовидящих</span></a>
       </div>
-     <!-- END TRAIN_CARD -->
-      
-      <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
-      </div>
-     <!-- END TRAIN_CARD -->
-      
-      <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
-      </div>
-     <!-- END TRAIN_CARD -->
-      
-     <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
-      </div>
-     <!-- END TRAIN_CARD -->
-      
-     <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
-      </div>
-     <!-- END TRAIN_CARD -->
-      
-     <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
-      </div>
-     <!-- END TRAIN_CARD -->
-      
-     <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
-      </div>
-     <!-- END TRAIN_CARD -->
-      
-     <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
-      </div>
-     <!-- END TRAIN_CARD -->
-      
-     <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
-      </div>
-     <!-- END TRAIN_CARD -->
-      
-     <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
-      </div>
-     <!-- END TRAIN_CARD -->
-      
-     <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
-      </div>
-     <!-- END TRAIN_CARD -->
-      
-     <!-- TRAIN_CARD -->
-      <div class="train_card">
-        <div class="train_info">
-          <div class="train_number">
-            <span>028Б</span>
-            <div class="train_img"></div>
-          </div>
-          <div class="train_name">
-            <span class="station_from">Москва белорусская -</span>
-            <span class="station_to">Калининград Пасс Южный</span>
-          </div>
-        </div>  
-        <div class="train_time">
-          <time class="time_from">18:20</time>
-          <time class="time_to">23:10</time>
-        </div>
-      </div>
-     <!-- END TRAIN_CARD -->
-      
-      
+      -->
     </div>
+  </div> 
+  
+<!-- REASULTS_SECTION -->
+  <div class="results_section">
+    
+    <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+    <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+    <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+   <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+   <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+   <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+   <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+   <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+   <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+   <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+   <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+   <!-- TRAIN_CARD -->
+    <div class="train_card">
+      <div class="train_info">
+        <div class="train_number">
+          <span>028Б</span>
+          <div class="train_img"></div>
+        </div>
+        <div class="train_name">
+          <span class="station_from">Москва белорусская -</span>
+          <span class="station_to">Калининград Пасс Южный</span>
+        </div>
+      </div>  
+      <div class="train_time">
+        <time class="time_from">18:20</time>
+        <time class="time_to">23:10</time>
+      </div>
+    </div>
+   <!-- END TRAIN_CARD -->
+    
+    
   </div>
-  <!-- End your code here -->
-  </body>
-  </html>
+</div>
+<!-- End your code here -->
+</body>
+</html>
