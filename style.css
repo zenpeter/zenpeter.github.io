@@ -1,389 +1,396 @@
+::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
 /* DESCTOP */
 @media (min-width: 768px) {
 
-  body {
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Roboto Condensed', sans-serif;
-    background-color: #ededed;
-    color: #212121;
-    
-  }
-  
-  .layout {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 100vh;
-  }
-  
-  .search_section {
-    background-color: #D3D3D3;
-    width: 480px;
-    height: 100%;
-  }
-  
-  .content {
-    padding: 50px 30px 0 30px;
-  }
-  
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 40px;
-    font-weight: bold;
-    color: #006BA9;
-  }
-  
-  h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    font-weight: normal;
-    vertical-align: top;
-    color: #808080;
-  }
-  
-  .header a {
-    font-size: 24px;
-    color: grey;
-  }
-  
-  .forms {
-    margin-top: 120px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .input_field {
-    margin-bottom: 16px;
-  }
-  
-  .input_field span {
-    color: #808080;
-    font-size: 24px;
-    margin-left: 4px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 12px 12px 12px 12px;
-    border: 2px solid #bbbbbb;
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-weight: 300;
-    -webkit-appearance: none;
-  }
-    
-  
-  input:focus {
-    outline: none;
-    border: 2px solid #006ba8;
-  }
-  
-  input:valid {
-    outline: none;
-    border: 2px solid #006ba8;
-  }
-    
-    .date-field {
-      height: 50px;
-    }
-  
-  .forms .button {
-    background-color: #006ba8;
-    cursor: pointer;
-    border: none;
-    color: #ffffff;
-    font-weight: bold;
-    -webkit-appearance: none;
-  }
-  
-  /* acessibility
-  .accessibility {
-    position: absolute;
-    bottom: 20px; 
-  }
-  
-  .accessibility span {
-    font-size: 20px;
-    color: #808080;
-    text-decoration: underline;
-  }
-  
-  .accessibility a:link {
-    text-decoration: none;
-  }
-  
-  .accessibility-icon {
-    width: 25px;
-    margin-right: 8px;
-  }
-  */
-    
-  
-  /* RESULTS_SECTION */
-  .results_section {
-    width: 720px;
-    height: 100%;
-    background-color: #ffffff;
-    overflow: auto;
-  }
-  
-  .train_card {
-    height: 72px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 24px 24px 24px 24px;
-    border-style: solid;
-    border-width: 0px 0px 1px 0px;
-    border-color: #D3D3D3;
-  }
-  
-  .train_info {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .train_number {
-    margin-right: 20px;
-  }
-  
-  .train_number span {
-    font-size: 20px;
-  }
-  
-  .train_img {
-    height: 24px;
-    width: 24px;
-    background-color: #006ba8;
-    border-radius: 6px;
-  }
-  
-  .train_name {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .train_name span {
-    font-size: 20px;
-  }
-  
-  .station_from {
-    margin-bottom: 8px;
-  }
-  
-  .train_time {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .train_time .time_from {
-    font-size: 32px;
-    color: #006ba8;
-  }
-  
-  .train_time .time_to {
-    font-size: 20px;
-    color: #808080;
-  }
-  }
-  
-  
-  
-  
-  /* MOBILE */
-  @media (max-width: 768px) {
-    
-  body {
-    font-family: 'Roboto Condensed', sans-serif;
-    margin: 0px;
-    padding: 0px;
-    color: #212121
-  }
-  
-  .search_section {
-    background-color: #D3D3D3;
-    height:100vh;
-  }
-  
-  .content {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 16px 24px 0 24px;
-  }
-  
-  .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  h2 {
-    margin: 0;
-    padding: 0;
-    font-size: 32px;
-    font-weight: bold;
-    color: #006BA9;
-  }
-  
-  h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 24px;
-    font-weight: normal;
-    vertical-align: top;
-    color: #808080;
-  }
-  
-  .header a {
-    font-size: 18px;
-    color: #808080;
-  }
-  
-  .forms {
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .input_field {
-    margin-bottom: 12px;
-  }
-  
-  .input_field span {
-    color: #757575;
-    font-size: 24px;
-    margin-left: 4px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 12px 12px 12px 12px;
-    border: 2px solid #bbbbbb;
-    border-radius: 8px;
-    box-sizing: border-box;
-    font-size: 20px;
-    font-weight: 300;
-    -webkit-appearance: none;
-    background: #fff;
-  }
-  
-  input:focus {
-    outline: none;
-    border: 2px solid #006ba8;
-  }
-  
-  input:valid {
-    outline: none;
-    border: 2px solid #006ba8;
-  }
-  
-  .forms .button {
-    background-color: #006ba8;
-    cursor: pointer;
-    border: none;
-    color: #ffffff;
-    font-weight: bold;
-    -webkit-appearance: none;
-  }
-  
-  /* accessibility  
-  .accessibility {
-    position: absolute;
-    bottom: 20px;
-  }
-  
-  .accessibility span {
-    font-size: 20px;
-    color: #808080;
-    text-decoration: underline;
-  }
-  
-  .accessibility a:link {
-    text-decoration: none;
-  }
-  
-  .accessibility-icon {
-    width: 25px;
-    margin-right: 8px;
-  }
-  */
-    
-  
-  /* RESULTS_SECTION */
-  .results_section {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .train_card {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 24px 24px 24px 24px;
-    border-style: solid;
-    border-width: 1px 0px 0px 0px;
-    border-color: #D3D3D3;
-    
-    
-  }
-  
-  .train_info {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .train_number {
-    margin-right: 20px;
-  }
-  
-  .train_number span {
-    font-size: 20px;
-  }
-  
-  .train_img {
-    height: 24px;
-    width: 24px;
-    background-color: #006ba8;
-    border-radius: 6px;
-  }
-  
-  .train_name {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .train_name span {
-    font-size: 20px;
-  }
-  
-  .station_from {
-    margin-bottom: 8px;
-  }
-  
-  .train_time {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .train_time .time_from {
-    font-size: 32px;
-    color: #006ba8;
-  }
-  
-  .train_time .time_to {
-    font-size: 20px;
-    color:  #808080;
-  }
-    
-  }
+body {
+margin: 0px;
+padding: 0px;
+font-family: 'Roboto Condensed', sans-serif;
+background-color: #ededed;
+color: #212121;
+
+}
+
+.layout {
+display: flex;
+flex-direction: row;
+justify-content: center;
+height: 100vh;
+}
+
+.search_section {
+background-color: #D3D3D3;
+width: 480px;
+height: 100%;
+}
+
+.content {
+padding: 50px 30px 0 30px;
+}
+
+.header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+h2 {
+margin: 0;
+padding: 0;
+font-size: 40px;
+font-weight: bold;
+color: #006BA9;
+}
+
+h1 {
+margin: 0;
+padding: 0;
+font-size: 24px;
+font-weight: normal;
+vertical-align: top;
+color: #808080;
+}
+
+.header a {
+font-size: 24px;
+color: grey;
+}
+
+.forms {
+margin-top: 120px;
+display: flex;
+flex-direction: column;
+}
+
+.input_field {
+margin-bottom: 16px;
+}
+
+.input_field span {
+color: #808080;
+font-size: 24px;
+margin-left: 4px;
+}
+
+input {
+width: 100%;
+padding: 12px 12px 12px 12px;
+border: 2px solid #bbbbbb;
+border-radius: 8px;
+box-sizing: border-box;
+font-size: 20px;
+font-weight: 300;
+-webkit-appearance: none;
+}
+
+
+input:focus {
+outline: none;
+border: 2px solid #006ba8;
+}
+
+input:valid {
+outline: none;
+border: 2px solid #006ba8;
+}
+
+.date-field {
+  height: 50px;
+}
+
+.forms .button {
+background-color: #006ba8;
+cursor: pointer;
+border: none;
+color: #ffffff;
+font-weight: bold;
+-webkit-appearance: none;
+}
+
+/* acessibility
+.accessibility {
+position: absolute;
+bottom: 20px; 
+}
+
+.accessibility span {
+font-size: 20px;
+color: #808080;
+text-decoration: underline;
+}
+
+.accessibility a:link {
+text-decoration: none;
+}
+
+.accessibility-icon {
+width: 25px;
+margin-right: 8px;
+}
+*/
+
+
+/* RESULTS_SECTION */
+.results_section {
+width: 720px;
+height: 100%;
+background-color: #ffffff;
+overflow: auto;
+}
+
+.train_card {
+height: 72px;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 24px 24px 24px 24px;
+border-style: solid;
+border-width: 0px 0px 1px 0px;
+border-color: #D3D3D3;
+}
+
+.train_info {
+display: flex;
+flex-direction: row;
+}
+
+.train_number {
+margin-right: 20px;
+}
+
+.train_number span {
+font-size: 20px;
+}
+
+.train_img {
+height: 24px;
+width: 24px;
+background-color: #006ba8;
+border-radius: 6px;
+}
+
+.train_name {
+display: flex;
+flex-direction: column;
+}
+
+.train_name span {
+font-size: 20px;
+}
+
+.station_from {
+margin-bottom: 8px;
+}
+
+.train_time {
+display: flex;
+flex-direction: column;
+}
+
+.train_time .time_from {
+font-size: 32px;
+color: #006ba8;
+}
+
+.train_time .time_to {
+font-size: 20px;
+color: #808080;
+}
+}
+
+
+
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+body {
+font-family: 'Roboto Condensed', sans-serif;
+margin: 0px;
+padding: 0px;
+color: #212121
+}
+
+.search_section {
+background-color: #D3D3D3;
+height:100vh;
+}
+
+.content {
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+padding: 16px 24px 0 24px;
+}
+
+.header {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+
+h2 {
+margin: 0;
+padding: 0;
+font-size: 32px;
+font-weight: bold;
+color: #006BA9;
+}
+
+h1 {
+margin: 0;
+padding: 0;
+font-size: 24px;
+font-weight: normal;
+vertical-align: top;
+color: #808080;
+}
+
+.header a {
+font-size: 18px;
+color: #808080;
+}
+
+.forms {
+margin-top: 40px;
+display: flex;
+flex-direction: column;
+}
+
+.input_field {
+margin-bottom: 12px;
+}
+
+.input_field span {
+color: #757575;
+font-size: 24px;
+margin-left: 4px;
+}
+
+input {
+width: 100%;
+padding: 12px 12px 12px 12px;
+border: 2px solid #bbbbbb;
+border-radius: 8px;
+box-sizing: border-box;
+font-size: 20px;
+font-weight: 300;
+-webkit-appearance: none;
+background: #ffffff;
+}
+
+input:focus {
+outline: none;
+border: 2px solid #006ba8;
+}
+
+input:valid {
+outline: none;
+border: 2px solid #006ba8;
+}
+
+.forms .button {
+background-color: #006ba8;
+cursor: pointer;
+border: none;
+color: #ffffff;
+font-weight: bold;
+-webkit-appearance: none;
+}
+
+/* accessibility  
+.accessibility {
+position: absolute;
+bottom: 20px;
+}
+
+.accessibility span {
+font-size: 20px;
+color: #808080;
+text-decoration: underline;
+}
+
+.accessibility a:link {
+text-decoration: none;
+}
+
+.accessibility-icon {
+width: 25px;
+margin-right: 8px;
+}
+*/
+
+
+/* RESULTS_SECTION */
+.results_section {
+display: flex;
+flex-direction: column;
+}
+
+.train_card {
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+padding: 24px 24px 24px 24px;
+border-style: solid;
+border-width: 1px 0px 0px 0px;
+border-color: #D3D3D3;
+
+
+}
+
+.train_info {
+display: flex;
+flex-direction: row;
+}
+
+.train_number {
+margin-right: 20px;
+}
+
+.train_number span {
+font-size: 20px;
+}
+
+.train_img {
+height: 24px;
+width: 24px;
+background-color: #006ba8;
+border-radius: 6px;
+}
+
+.train_name {
+display: flex;
+flex-direction: column;
+}
+
+.train_name span {
+font-size: 20px;
+}
+
+.station_from {
+margin-bottom: 8px;
+}
+
+.train_time {
+display: flex;
+flex-direction: column;
+}
+
+.train_time .time_from {
+font-size: 32px;
+color: #006ba8;
+}
+
+.train_time .time_to {
+font-size: 20px;
+color:  #808080;
+}
+
+}
+
+
+

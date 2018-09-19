@@ -6,15 +6,17 @@
   <title></title>
   <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="/lib/datepicker.css">
   
   <script src="/lib/jquery.js"></script>
-  <script src="/lib/jquery.maskedinput.min.js"></script>
+  <script src="/"></script>
+  
   
 </head>
 <body>
-<!-- Start your code here -->
-<div class="layout">
-  
+  <!-- Start your code here -->
+  <div class="layout">
+    
   <!-- SEARCH_SECTION -->
     <div class="search_section">
       <div class="content">
@@ -35,9 +37,9 @@
               <!--<span>Куда</span>-->
               <input type="text" name="to" placeholder="Куда" required>
             </div>
-            <div class="input_field date-field">
+            <div id="datepickerContainer" class="input_field date-field">
               <!--<span>Когда</span>-->
-              <input id="date" type="text" name="when" required>
+              
             </div>
             <input class="button" type="submit" value="НАЙТИ">
           </form>
@@ -284,5 +286,6 @@
       
     </div>
   </div>
-</body>
-</html>
+  <!-- End your code here -->
+  </body>
+  </html>
