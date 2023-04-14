@@ -391,7 +391,7 @@ body {
   }
 
   .project__card h3 {
-    margin: 4vw 0vw 0vw 4vw;
+    margin: 2.4vw 0vw 0vw 2.6vw;
     font-style: normal;
     font-weight: 500;
     font-size: 2vw;
@@ -400,7 +400,7 @@ body {
 
   .project__card p {
     width: 60%;
-    margin: 1.2vw 0vw 0vw 4vw;
+    margin: 0.8vw 0vw 0vw 2.8vw;
     font-style: normal;
     font-weight: 300;
     font-size: 1.4vw;
@@ -525,7 +525,7 @@ body {
   }
 
   .project__card h3 {
-    margin: 4vw 0vw 0vw 4vw;
+    margin: 2.8vw 0vw 0vw 2.8vw;
     font-style: normal;
     font-weight: 500;
     font-size: 2vw;
@@ -534,7 +534,7 @@ body {
 
   .project__card p {
     width: 60%;
-    margin: 1.2vw 0vw 0vw 4vw;
+    margin: 0.8vw 0vw 0vw 2.8vw;
     font-style: normal;
     font-weight: 300;
     font-size: 1.4vw;
