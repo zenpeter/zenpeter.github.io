@@ -272,6 +272,7 @@ body {
     background-size: cover;
     margin: 0px 0px 40px 0px;
     background-size: cover;
+    color: #04560B;
   }
 
   .project-2 {
@@ -282,6 +283,7 @@ body {
     background-size: cover;
     margin: 0px 0px 40px 0px;
     background-size: cover;
+    color: #85500A;
   }
 
   .project-3 {
@@ -292,6 +294,7 @@ body {
     background-size: cover;
     margin: 0px 0px 40px 0px;
     background-size: cover;
+    color: #66062E;
   }
 
   .project-4 {
@@ -302,6 +305,7 @@ body {
     background-size: cover;
     margin: 0px 0px 40px 0px;
     background-size: cover;
+    color: #063756;
   }
 
   .project-5 {
@@ -312,6 +316,7 @@ body {
     background-size: cover;
     margin: 0px 0px 40px 0px;
     background-size: cover;
+    color: #094642;
   }
 
   .project-6 {
@@ -322,6 +327,7 @@ body {
     background-size: cover;
     margin: 0px 0px 12px 0px;
     background-size: cover;
+    color: #923B05;
   }
 
   .projects__ending {
@@ -407,6 +413,7 @@ body {
     grid-row: 1 / 5;
     margin: 0px 0px 1.5625vw 1.5625vw;
     background-size: cover;
+    color: #04560B;
   }
 
   .project-2 {
@@ -415,6 +422,7 @@ body {
     grid-row: 2 / 6;
     margin: 0px 1.5625vw 1.5625vw 0px;
     background-size: cover;
+    color: #85500A;
   }
 
   .project-3 {
@@ -423,6 +431,7 @@ body {
     grid-row: 5 / 9;
     margin: 1.5625vw 0px 1.5625vw 1.5625vw;
     background-size: cover;
+    color: #66062E;
   }
 
   .project-4 {
@@ -431,6 +440,7 @@ body {
     grid-row: 6 / 10;
     margin: 1.5625vw 1.5625vw 1.5625vw 0px;
     background-size: cover;
+    color: #063756;
   }
 
   .project-5 {
@@ -439,6 +449,7 @@ body {
     grid-row: 9 / 13;
     margin: 1.5625vw 0px 1.5625vw 1.5625vw;
     background-size: cover;
+    color: #094642;
   }
 
   .project-6 {
@@ -447,6 +458,7 @@ body {
     grid-row: 10 / 14;
     margin: 1.5625vw 1.5625vw 0px 0px;
     background-size: cover;
+    color: #923B05;
   }
 
   .projects__ending {
