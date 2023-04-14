@@ -530,7 +530,7 @@ body {
   }
 
   .project-1 {
-    background-image: url(/docs/assets/images/P1.jpg);
+    background-image: url(../images/P1.jpg);
     grid-column: 2 / 3;
     grid-row: 1 / 5;
     margin: 0px 0px 1.5625vw 1.5625vw;
