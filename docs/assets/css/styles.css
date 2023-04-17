@@ -86,6 +86,17 @@ body {
     cursor: pointer;
     color: var(--text-color);
     background-color: #F5EFE8;
+    transition: box-shadow margin 100ms ease-in-out 200ms;
+  }
+  
+  .nav-button:hover {
+  box-shadow: 2px 3px 0px 1px #000000;
+  margin-top: -2px;
+  }
+
+  .nav-button:active {
+  box-shadow: 1px 1px 0px 1px #000000;
+  margin-top: -1px;
   }
 }
 
@@ -142,7 +153,19 @@ body {
     cursor: pointer;
     color: var(--text-color);
     background-color: #F5EFE8;
+    transition: box-shadow margin 100ms ease-in-out 200ms;
   }
+  
+  .nav-button:hover {
+  box-shadow: 2px 3px 0px 1px #000000;
+  margin-top: -2px;
+  }
+
+  .nav-button:active {
+  box-shadow: 1px 1px 0px 1px #000000;
+  margin-top: -1px;
+  }
+  
 }
 
  /* Hero - Desktop */
@@ -198,6 +221,17 @@ body {
     cursor: pointer;
     color: var(--text-color);
     background-color: #F5EFE8;
+    transition: box-shadow margin 100ms ease-in-out 200ms;
+  }
+  
+  .nav-button:hover {
+  box-shadow: 2px 3px 0px 1px #000000;
+  margin-top: -2px;
+  }
+
+  .nav-button:active {
+  box-shadow: 1px 1px 0px 1px #000000;
+  margin-top: -1px;
   }
 }
 
