@@ -157,13 +157,13 @@ body {
   }
   
   .nav-button:hover {
-  box-shadow: 2px 3px 0px 1px #000000;
-  margin-top: -2px;
+    box-shadow: 2px 3px 0px 1px #000000;
+    margin-top: 0.32em;
   }
 
   .nav-button:active {
-  box-shadow: 1px 1px 0px 1px #000000;
-  margin-top: -1px;
+    box-shadow: 1px 1px 0px 1px #000000;
+    margin-top: 0.4em;
   }
   
 }
@@ -225,13 +225,13 @@ body {
   }
   
   .nav-button:hover {
-  box-shadow: 2px 3px 0px 1px #000000;
-  margin-top: -2px;
+    box-shadow: 2px 3px 0px 1px #000000;
+    margin-top: 0.32em;
   }
 
   .nav-button:active {
-  box-shadow: 1px 1px 0px 1px #000000;
-  margin-top: -1px;
+    box-shadow: 1px 1px 0px 1px #000000;
+    margin-top: 0.4em;
   }
 }
 
