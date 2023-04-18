@@ -714,6 +714,11 @@ body {
     text-decoration-line: underline;
     color: var(--text-color);
   }
+  
+  .footer-link:hover {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+  }
 
   #footer__button-up {
     width: 10vw;
@@ -751,6 +756,11 @@ body {
     font-weight: 300;
     text-decoration-line: underline;
     color: var(--text-color);
+  }
+  
+  .footer-link:hover {
+    font-weight: 500;
+    letter-spacing: 0.01em;
   }
 
   #footer__button-up {
