@@ -279,8 +279,14 @@ body {
 
   .project__card {
     border-radius: 2px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
   }
 
+  .project__card:visited {
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
   .project__card h3 {
     margin: 24px 0px 0px 24px;
     font-style: normal;
@@ -306,7 +312,6 @@ body {
     background-size: cover;
     margin: 0px 0px 40px 0px;
     background-size: cover;
-    color: #04560B;
   }
 
   .project-2 {
@@ -317,7 +322,6 @@ body {
     background-size: cover;
     margin: 0px 0px 40px 0px;
     background-size: cover;
-    color: #85500A;
   }
 
   .project-3 {
@@ -328,7 +332,6 @@ body {
     background-size: cover;
     margin: 0px 0px 40px 0px;
     background-size: cover;
-    color: #66062E;
   }
 
   .project-4 {
@@ -339,7 +342,6 @@ body {
     background-size: cover;
     margin: 0px 0px 40px 0px;
     background-size: cover;
-    color: #063756;
   }
 
   .project-5 {
@@ -350,7 +352,6 @@ body {
     background-size: cover;
     margin: 0px 0px 40px 0px;
     background-size: cover;
-    color: #094642;
   }
 
   .project-6 {
@@ -361,7 +362,6 @@ body {
     background-size: cover;
     margin: 0px 0px 12px 0px;
     background-size: cover;
-    color: #923B05;
   }
 
   .projects__ending {
@@ -422,6 +422,12 @@ body {
 
   .project__card {
     border-radius: 2px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .project__card:visited {
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .project__card h3 {
@@ -447,7 +453,6 @@ body {
     grid-row: 1 / 5;
     margin: 0px 0px 1.5625vw 1.5625vw;
     background-size: cover;
-    color: #04560B;
   }
 
   .project-2 {
@@ -456,7 +461,6 @@ body {
     grid-row: 2 / 6;
     margin: 0px 1.5625vw 1.5625vw 0px;
     background-size: cover;
-    color: #85500A;
   }
 
   .project-3 {
@@ -465,7 +469,6 @@ body {
     grid-row: 5 / 9;
     margin: 1.5625vw 0px 1.5625vw 1.5625vw;
     background-size: cover;
-    color: #66062E;
   }
 
   .project-4 {
@@ -474,7 +477,6 @@ body {
     grid-row: 6 / 10;
     margin: 1.5625vw 1.5625vw 1.5625vw 0px;
     background-size: cover;
-    color: #063756;
   }
 
   .project-5 {
@@ -483,7 +485,6 @@ body {
     grid-row: 9 / 13;
     margin: 1.5625vw 0px 1.5625vw 1.5625vw;
     background-size: cover;
-    color: #094642;
   }
 
   .project-6 {
@@ -492,7 +493,6 @@ body {
     grid-row: 10 / 14;
     margin: 1.5625vw 1.5625vw 0px 0px;
     background-size: cover;
-    color: #923B05;
   }
 
   .projects__ending {
@@ -556,6 +556,12 @@ body {
 
   .project__card {
     border-radius: 2px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .project__card:visited {
+    color: rgba(0, 0, 0, 0.7);
   }
 
   .project__card h3 {
@@ -580,7 +586,6 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
     margin: 0px 0px 1.5625vw 1.5625vw;
-    color: #04560B;
     background-size: cover;
   }
 
@@ -589,7 +594,6 @@ body {
     grid-column: 1 / 2;
     grid-row: 2 / 6;
     margin: 0px 1.5625vw 1.5625vw 0px;
-    color: #85500A;
     background-size: cover;
   }
 
@@ -598,7 +602,6 @@ body {
     grid-column: 2 / 3;
     grid-row: 5 / 9;
     margin: 1.5625vw 0px 1.5625vw 1.5625vw;
-    color: #66062E;
     background-size: cover;
   }
 
@@ -607,7 +610,6 @@ body {
     grid-column: 1 / 2;
     grid-row: 6 / 10;
     margin: 1.5625vw 1.5625vw 1.5625vw 0px;
-    color: #063756;
     background-size: cover;
   }
 
@@ -616,7 +618,6 @@ body {
     grid-column: 2 / 3;
     grid-row: 9 / 13;
     margin: 1.5625vw 0px 1.5625vw 1.5625vw;
-    color: #094642;
     background-size: cover;
   }
 
@@ -625,7 +626,6 @@ body {
     grid-column: 1 / 2;
     grid-row: 10 / 14;
     margin: 1.5625vw 1.5625vw 0px 0px;
-    color: #923B05;
     background-size: cover;
   }
 
