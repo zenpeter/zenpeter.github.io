@@ -520,7 +520,7 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: repeat(13);
-    margin: 30vh 0vh 32vh 0vh;
+    padding: 8vh 0vh 8vh 0vh;
   }
 
   .project__card-title {
