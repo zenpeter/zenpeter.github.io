@@ -9,6 +9,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: var(--main-font);
+  cursor: url('../images/cursor.svg'), auto;
 }
 
 @media only screen and (max-width: 767px) {
