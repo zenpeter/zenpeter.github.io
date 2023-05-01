@@ -9,7 +9,6 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: var(--main-font);
-  cursor: url('../images/cursor.svg'), auto;
 }
 
 @media only screen and (max-width: 767px) {
@@ -283,6 +282,7 @@ body {
     border-radius: 2px;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.6);
+    cursor: url('../images/cursor.svg'), auto;
   }
 
   .project__card:visited {
@@ -427,6 +427,7 @@ body {
     border-radius: 2px;
     text-decoration: none;
     color: rgba(0, 0, 0, 0.6);
+    cursor: url('../images/cursor.svg'), auto;
   }
   
   .project__card:visited {
