@@ -1,5 +1,10 @@
+@font-face {
+  font-family: SpaceGrotesk;
+  src: url('../fonts/SpaceGrotesk.ttf');
+}
+
 :root {
-  --main-font: Inter, monospace;
+  --main-font: SpaceGrotesk, monospace;
   --text-color: #221100;
 }
 
