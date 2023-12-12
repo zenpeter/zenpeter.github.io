@@ -96,76 +96,124 @@ buttonBottom.onclick = function(){
   // Intro
   triggerIntro.addEventListener('mouseover', () => {
     user.style.filter = 'none';
+    user.style.opacity = '100%';
     vibes.style.filter = 'none';
+    vibes.style.opacity = '100%';
     smile.style.filter = 'none';
+    smile.style.opacity = '100%';
     club.style.filter = 'none';
+    club.style.opacity = '100%';
     idea.style.filter = 'none';
+    idea.style.opacity = '100%';
     ukraine.style.filter = 'none';
+    ukraine.style.opacity = '100%';
   });
 
   triggerIntro.addEventListener('mouseout', () => {
     user.style.filter = 'grayscale(100%)';
+    user.style.opacity = '70%';
     vibes.style.filter = 'grayscale(100%)';
+    vibes.style.opacity = '70%';
     smile.style.filter = 'grayscale(100%)';
+    smile.style.opacity = '70%';
     club.style.filter = 'grayscale(100%)';
+    club.style.opacity = '70%';
     idea.style.filter = 'grayscale(100%)';
+    idea.style.opacity = '70%';
     ukraine.style.filter = 'grayscale(100%)';
+    ukraine.style.opacity = '70%';
   });
 
 // Personal
   triggerPersonal.addEventListener('mouseover', () => { 
     vibes.style.filter = 'none';
+    vibes.style.opacity = '100%';
     run.style.filter = 'none';
+    run.style.opacity = '100%';
     smile.style.filter = 'none';
+    smile.style.opacity = '100%';
     exploring.style.filter = 'none';
+    exploring.style.opacity = '100%';
     ukraine.style.filter = 'none';
+    ukraine.style.opacity = '100%';
     kosher.style.filter = 'none';
+    kosher.style.opacity = '100%';
     coin.style.filter = 'none';
+    coin.style.opacity = '100%';
   });
 
   triggerPersonal.addEventListener('mouseout', () => {
     vibes.style.filter = 'grayscale(100%)';
+    vibes.style.opacity = '70%';
     run.style.filter = 'grayscale(100%)';
+    run.style.opacity = '70%';
     smile.style.filter = 'grayscale(100%)';
+    smile.style.opacity = '70%';
     exploring.style.filter = 'grayscale(100%)';
+    exploring.style.opacity = '70%';
     ukraine.style.filter = 'grayscale(100%)';
+    ukraine.style.opacity = '70%';
     kosher.style.filter = 'grayscale(100%)';
+    kosher.style.opacity = '70%';
     coin.style.filter = 'grayscale(100%)';
+    coin.style.opacity = '70%';
   });
 
 // Experience
   triggerExperience.addEventListener('mouseover', () => {
     google.style.filter = 'none';
+    google.style.opacity = '100%';
     figma.style.filter = 'none';
+    figma.style.opacity = '100%';
     layout.style.filter = 'none';
+    layout.style.opacity = '100%';
     component.style.filter = 'none';
+    component.style.opacity = '100%';
     HTML.style.filter = 'none';
+    HTML.style.opacity = '100%';
     CSS.style.filter = 'none';
+    CSS.style.opacity = '100%';
   });
 
   triggerExperience.addEventListener('mouseout', () => {
     google.style.filter = 'grayscale(100%)';
+    google.style.opacity = '70%';
     figma.style.filter = 'grayscale(100%)';
+    figma.style.opacity = '70%';
     layout.style.filter = 'grayscale(100%)';
+    layout.style.opacity = '70%';
     component.style.filter = 'grayscale(100%)';
+    component.style.opacity = '70%';
     HTML.style.filter = 'grayscale(100%)';
+    HTML.style.opacity = '70%';
     CSS.style.filter = 'grayscale(100%)';
+    CSS.style.opacity = '70%';
   });
 
 // Job
   triggerJob.addEventListener('mouseover', () => {
     vibes.style.filter = 'none';
+    vibes.style.opacity = '100%';
     buttons.style.filter = 'none';
+    buttons.style.opacity = '100%';
     exploring.style.filter = 'none';
+    exploring.style.opacity = '100%';
     idea.style.filter = 'none';
+    idea.style.opacity = '100%';
     details.style.filter = 'none';
+    details.style.opacity = '100%';
   });
 
   triggerJob.addEventListener('mouseout', () => {
     vibes.style.filter = 'grayscale(100%)';
+    vibes.style.opacity = '70%';
     buttons.style.filter = 'grayscale(100%)';
+    buttons.style.opacity = '70%';
     exploring.style.filter = 'grayscale(100%)';
+    exploring.style.opacity = '70%';
     idea.style.filter = 'grayscale(100%)';
+    idea.style.opacity = '70%';
     details.style.filter = 'grayscale(100%)';
+    details.style.opacity = '70%';
   });
   
