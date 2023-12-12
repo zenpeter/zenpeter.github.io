@@ -490,19 +490,19 @@ ProjectCard__RoleBodyText {
 }
 
 .ProjectImg-1 {
-  background-image: url(img/Projects/Feelter.png);
+  background-image: url(../img/Projects/Feelter.png);
 }
 
 .ProjectImg-2 {
-  background-image: url(img/Projects/Laika.png);
+  background-image: url(../img/Projects/Laika.png);
 }
 
 .ProjectImg-3 {
-  background-image: url(img/Projects/QS.png);
+  background-image: url(../img/Projects/QS.png);
 }
 
 .ProjectImg-4 {
-  background-image: url(img/Projects/Baby.png);
+  background-image: url(../img/Projects/Baby.png);
 }
 
 
@@ -785,6 +785,7 @@ ProjectCard__RoleBodyText {
 /* Stikers hover */
 .About__Stiker {
   filter: grayscale(100%);
+  opacity: 70%;
 }
 
 .About__Intro:hover {
