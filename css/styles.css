@@ -40,6 +40,7 @@
   --color-text-primary: #FFFFFF;
   --color-text-secondary: #A4A4A4;
   --color-accent: #F57600;
+  --color-background-accent: #2B1E12;
   --color-grid-lines: #1F1F1F;
   --color-grid-main: #222222;
 }
@@ -51,6 +52,7 @@
   --color-text-primary: #141414;
   --color-text-secondary: #707070;
   --color-accent: #F57600;
+  --color-background-accent: #F5E9DE;
   --color-grid-lines: #E8E8E8;
   --color-grid-main: #E8E8E8;
 }
@@ -789,19 +791,43 @@ ProjectCard__RoleBodyText {
 }
 
 .About__Intro:hover {
-   
+  outline: 1px solid var(--color-accent);
+  background-color: var(--color-background-accent);
+}
+
+.About__Intro:hover .About__Intro__TextContainer {
+  border-top: 1px solid var(--color-accent);
 }
 
 .About__Personal:hover {
-  
+  outline: 1px solid var(--color-accent);
+  background-color: var(--color-background-accent);
+}
+
+.About__Personal:hover .About__Personal__TextContainer {
+  border-top: 1px solid var(--color-accent);
 }
 
 .About__Experience:hover {
-  
+  outline: 1px solid var(--color-accent);
+  background-color: var(--color-background-accent);
+}
+
+.About__Experience:hover .About__Experience__ListContainer {
+  border-top: 1px solid var(--color-accent);
+}
+
+.About__Experience:hover .About__Experience__CTAContainer {
+  border-top: 1px solid var(--color-accent);
 }
 
 .About__Job:hover {
- 
+  outline: 1px solid var(--color-accent);
+  background-color: var(--color-background-accent);
+}
+
+.About__Job:hover .About__Job__TextContainer {
+  border-top: 1px solid var(--color-accent);
 }
 
 
@@ -963,6 +989,7 @@ ProjectCard__RoleBodyText {
   gap: 16px;
   align-self: stretch;
   border-top: 1px solid var(--color-divider);
+  cursor: pointer;
 }
 
 .About__Experience__CTAIcon {
@@ -1080,6 +1107,7 @@ ProjectCard__RoleBodyText {
 
 .Connect__Button:hover {
   border: 1px solid var(--color-accent);
+  background-color: var(--color-background-accent);
 }
 
 .Connect__Button:hover .ConnectButton__CaptionText {
