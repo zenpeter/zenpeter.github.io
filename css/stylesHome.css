@@ -1,130 +1,103 @@
 /* FONTS */
 
 @font-face {
-  font-family:Satoshi-Regular;
-  src: url(/fonts/Satoshi-Regular.ttf)
+  font-family: Stara-Bold;
+  src: url(/fonts/Stara-Bold.otf);
 }
 
 @font-face {
-  font-family:Satoshi-Italic;
-  src: url(/fonts/Satoshi-Italic.ttf)
+  font-family: Stara-Medium;
+  src: url(/fonts/Stara-Medium.otf);
 }
 
 @font-face {
-  font-family:Satoshi-Light;
-  src: url(/fonts/Satoshi-Light.ttf)
+  font-family: Stara-BoldItalic;
+  src: url(/fonts/Stara-BoldItalic.otf);
 }
 
 @font-face {
-  font-family:Satoshi-LightItalic;
-  src: url(/fonts/Satoshi-LightItalic.ttf)
-}
-
-@font-face {
-  font-family:Satoshi-Medium;
-  src: url(/fonts/Satoshi-Medium.ttf)
-}
-
-@font-face {
-  font-family:Satoshi-MediumItalic;
-  src: url(/fonts/Satoshi-MediumItalic.ttf)
+  font-family: Stara-SemiBoldItalic;
+  src: url(/fonts/Stara-SemiBoldItalic.otf);
 }
 
 
- 
-/* COLOR STYLES */
-:root {
-  --color-background: #141414;
-  --color-divider: #404040;
-  --color-icon: #D9D9D9;
-  --color-text-primary: #FFFFFF;
-  --color-text-secondary: #A4A4A4;
-  --color-accent: #F57600;
-  --color-background-accent: #2B1E12;
-  --color-grid-lines: #1F1F1F;
-  --color-grid-main: #222222;
-}
-
-.lightTheme {
-  --color-background: #F5F6F7;
-  --color-divider: #AEAEAE;
-  --color-icon: #9D9D9D;
-  --color-text-primary: #141414;
-  --color-text-secondary: #707070;
-  --color-accent: #F57600;
-  --color-background-accent: #F5E9DE;
-  --color-grid-lines: #E8E8E8;
-  --color-grid-main: #E8E8E8;
-}
 
 
 
 /* TEXT STYLES */
 
 h1 {
-  font-family: Satoshi-Regular, Sans-Serif;
-  font-size: 56px;
+  font-family: Stara-Bold;
+  font-size: 9vw;
   font-style: normal;
-  line-height: 72px;
-  margin: 0px;
-  color: var(--color-text-primary);
+  line-height: 120%;
+  letter-spacing: -0.4vw;
+  text-transform: uppercase;
 }
 
 h2 {
-  font-family: Satoshi-Regular, Sans-Serif;
-  font-size: 48px;
+  font-family: Stara-BoldItalic;
+  font-size: 5.4vw;
   font-style: normal;
-  line-height: 58px;
-  margin: 0px;
-  color: var(--color-text-primary);
-
+  line-height: 120%;
+  letter-spacing: -0.3vw;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-family: Satoshi-Regular, Sans-Serif;
-  font-size: 32px;
+  font-family: Stara-Bold;
+  font-size: 1.67vw;
   font-style: normal;
-  line-height: 40px;
-  margin: 0px;
-  color: var(--color-text-primary);
+  line-height: 120%;
+  letter-spacing: -0.03vw;
+  text-transform: uppercase;
 }
 
-.BodyText {
-  font-family: Satoshi-Regular, Sans-Serif;
-  font-size: 18px;
+h4 {
+  font-family: Stara-SemiBoldItalic;
+  font-size: 1.24vw;
   font-style: normal;
-  line-height: 26px;
-  margin: 0px;
-  color: var(--color-text-primary);
+  line-height: 120%;
+  text-transform: uppercase;
 }
 
-.LinkText {
-  font-family: Satoshi-Regular, Sans-Serif;
-  font-size: 18px;
+h5 {
+  font-family: Stara-SemiBoldItalic;
+  font-size: 1.11vw;
   font-style: normal;
-  line-height: 24px;
-  margin: 0px;
-  color: var(--color-text-primary);
-  text-decoration: none;
+  line-height: 120%;
+  text-transform: uppercase;
 }
 
-.CaptionText {
-  font-family: Satoshi-Regular, Sans-Serif;
-  font-size: 16px;
+.Text-Link {
+  font-family: Stara-Medium;
+  font-size: 1.24vw;
   font-style: normal;
-  line-height: 24px;
-  margin: 0px;
-  color: var(--color-text-secondary);
+  line-height: 120%;
+  text-transform: uppercase;
 }
 
-.CaptionSmallText {
-  font-family: Satoshi-Regular, Sans-Serif;
-  font-size: 14px;
+.Text-Body {
+  font-family: Stara-Medium;
+  font-size: 1.11vw;
   font-style: normal;
-  letter-spacing: 1%;
-  line-height: 20px;
-  color: var(--color-text-primary);
+  line-height: 140%;
 }
+
+
+ 
+
+/* COLOR STYLES */
+
+:root {
+  --color-background: #141414;
+  --color-divider: #404040;
+  --color-icon: #D9D9D9;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #808080;
+}
+
+
 
 
 /* GLOBAL STYLES */
@@ -150,1430 +123,289 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  position: relative;
 }
 
 main {
   width: 100%;
-  max-width: 1440px;
-  overflow-x: hidden;
+  max-width: 1920px;
   display: flex;
+  padding: 0px 3.2vw;
   flex-direction: column;
   align-items: center;
+}
+
+.BackgroundImg-GoldenRatio {
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.BackgroundImg-FooterText {
+  bottom: 0px;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+}
+
+.BackgroundImg-Top {
+  width: 100%;
+  position: fixed;
+  z-index: -2;
+}
+
+.BackgroundImg-Bottom {
+  bottom: 0px;
+  width: 100%;
+  position: fixed;
+  z-index: -2;
 }
 
 
 /* CONTENT */
 
-.ContentContainer {  
+header {
   display: flex;
-  width: auto;
-  flex-direction: column;
-  align-items: stretch;
-  align-self: stretch;
-}
-
-
-/* CURSOR STYLES */
-
-.figma-name {
-    padding: 0px 4px;
-    color: #FFF;
-    font-size: 11px;
-    display: inline-block;
-    position: absolute;
-    top: 24px;
-    left: 20px;
-}
-
-.figma-cursor {
-  position: absolute;
-  font-family: sans-serif;
-  line-height: 1.5;
-}
-
-.figma-cursor {
-    right: 25%;
-    top: 50%;
-    animation: 20s hovering-1 infinite;
-}
-
-.figma-cursor .figma-name {
-  background-color: var(--color-accent);
-}
-
-@keyframes hovering-1 {
-  0% {
-    transform: translate3d(0px, 0px, 0px);
-  }
-
-  10% {
-    transform: translate3d(10px, 10px, 0px);
-  }
-
-  20% {
-    transform: translate3d(0px, 0px, 0px);
-  }
-
-  25% {
-    transform: translate3d(-40px, 20px, 0px);
-  }
-
-  30% {
-    transform: translate3d(-45px, 25px, 0px);
-  }
-
-  35% {
-    transform: translate3d(-40px, 20px, 0px);
-  }
-
-  50% {
-    transform: translate3d(-40px, 20px, 0px);
-  }
-
-  55% {
-    transform: translate3d(-200px, 40px, 0px);
-  }
-
-  60% {
-    transform: translate3d(-205px, 45px, 0px);
-  }
-
-  65% {
-    transform: translate3d(-200px, 40px, 0px);
-  }
-
-  70% {
-    transform: translate3d(-205px, 45px, 0px);
-  }
-
-  95% {
-    transform: translate3d(-200px, 40px, 0px);
-  }
-}
-
-
-
-/* TOP NAVIGATION */
-
-.TopNav {  
-  display: flex;
-  padding: 24px 48px 0px 48px;
   flex-direction: column;
   align-items: center;
-  gap: 24px;
+  gap: 16vw;
   align-self: stretch;
 }
 
-.TopNav__Content {
+nav {
+  display: flex;
+  padding: 32px 0px;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.Header__Logo {
+  color: var(--color-text-primary);
+  font-family: Stara-Medium;
+  font-size: 1.24vw;
+  font-style: normal;
+  line-height: 24px;
+  text-transform: uppercase;
+}
+
+.Header__NavLinks {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.Header__NavLink a {
+  color: var(--color-text-primary);
+}
+
+.Header__NavLink img {
+  height: 0.88vw;
+  margin-left: 6px;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.24s;
+}
+
+.Header__NavLink:hover img {
+  margin-bottom: 2px;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.16s;
+}
+
+
+
+.Header__Content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+}
+
+.Header__Content h1 {
+  color: var(--color-text-primary);
+}
+
+.Header__ContentSubheader {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
   align-self: stretch;
 }
 
-.TopNav__LogoContainer {
-  width: 48px;
-  height: 48px;
-}
-
-.TopNav__Logo {
-  width: 48px;
-  height: 48px;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
-}
-
-.TopNav__MenuLinks {  
+.Header__ContentSubheader__Group {
+  width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 32px;
 }
 
-.TopNav__LinkContainer {
+.Header__ContentSubheader__Group h2 {
+  color: var(--color-text-primary);
+  line-height: 70%;
+}
+
+.Header__ContentSubheader h4 {
+  font-family: Stara-Medium;
+  color: var(--color-text-primary);
+  line-height: 100%;
+  vertical-align: baseline;
+  
+  
+}
+
+.Header__ContentSubheader__Group h4 {
+  font-family: Stara-SemiBoldItalic;
+  width: 32%;
+}
+
+ 
+
+
+.Work {
   display: flex;
-  width: 112px;
-  padding: 12px 0px;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-  text-decoration: none;
-}
-
-.TopNav__LinkContainer:hover {
-  outline: 1px solid var(--color-accent); 
-}
-
-.TopNav__LinkContainer:hover .TopNav__LinkText {
-  font-family:Satoshi-Italic;
-  color: var(--color-accent);
-}
-
-
-.TopNav__LinkContainer svg {
-  display: none;
-}
-
-.TopNav__LinkText {
-  text-align: center;
-}
-
-.MenuHamburger {
-  display: none;
-  cursor: pointer;
-}
-
-.MenuBar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: var(--color-text-primary);
-}
-
-
-
-/* HERO */
-
-.HeroSection {  
-  display: flex;
-  height: calc(100vh - 72px - 80px);
-  padding: 0px 48px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-.HeroSection__Text {
-  display: flex;
-  width: 1080px;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.Hero__Title {
+  gap: 80px;
+  margin-top: 160px;
   align-self: stretch;
 }
 
-.Hero__AccentText {
-  color: var(--color-accent);
-}
-
-
-/* PROJECTS */
-
-.ProjectsSection {  
+.Work__Row {
   display: flex;
-  padding: 0px 48px;
-  flex-direction: column;
   align-items: flex-start;
   gap: 80px;
   align-self: stretch;
 }
 
-.ProjectCard {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
-}
-
-.Description {
+.Work__Project {
   display: flex;
   flex-direction: column;
-  width: 546px;
   align-items: flex-start;
-  border: 1px solid var(--color-divider);
-}
-
-.ProjectCard__Name {
-  display: flex;
-  padding: 24px;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  border-bottom: 1px solid var(--color-divider);
-}
-
-.ProjectCard__Title {
-  align-self: stretch;
-}
-
-.ProjectCard__DescriptionContainer {
-  display: flex;
-  padding: 24px;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  border-bottom: 1px solid var(--color-divider);
-}
-
-.ProjectCard__DescriptionText {
-  align-self: stretch;
-}
-
-.ProjectCard__CompanyRoleContainer {
-  display: flex;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-.ProjectCard__CompanyContainer {
-  display: flex;
-  padding: 24px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  flex: 1 0 0;
-  align-self: stretch;
-  border-right: 1px solid var(--color-divider);
-}
-
-ProjectCard__CompanyCaptionText {
-}
-
-ProjectCard__CompanyBodyText {
-}
-
-.ProjectCard__RoleContainer {
-  display: flex;
-  padding: 24px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  flex: 1 0 0;
-}
-
-ProjectCard__RoleCaptionText {
-}
-
-ProjectCard__RoleBodyText {
-}
-
-.ProjectCard__CtaContainer {
-  display: flex;
-  padding: 24px;
-  align-items: center;
-  align-self: stretch;
-  gap: 16px;
-  border-top: 1px solid var(--color-divider);
-}
-
-.ProjectCard__CtaContainer:hover {
   gap: 32px;
-  outline: 1px solid var(--color-accent);
-  border-top: 1px solid var(--color-background);
-}
-
-.ProjectCard__CtaContainer:hover .ProjectCard__CtaText {
-  font-family: Satoshi-Italic;
-  color: var(--color-accent);
-}
-
-.ProjectCard__CtaContainer:hover svg path {
-  fill: var(--color-accent);
-}
-
-.ProjectCard__CtaText {
-}
-
-.ImgContainer {
-  display: flex;
-  height: 560px;
-  justify-content: center;
-  align-items: center;
   flex: 1 0 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
-.ProjectImg-1 {
-  background-image: url(../img/Home/Projects/Feelter.png);
+.Work__Project img{
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .6s ease-in-out;
+	transition: .6s ease-in-out;
 }
 
-.ProjectImg-2 {
-  background-image: url(../img/Home/Projects/Laika.png);
+.Work__Project:hover img{
+  -webkit-transform: scale(1.05);
+	transform: scale(1.05);
 }
 
-.ProjectImg-3 {
-  background-image: url(../img/Home/Projects/QS.png);
-}
-
-.ProjectImg-4 {
-  background-image: url(../img/Home/Projects/Baby.png);
-}
-
-
-
-
-/* ABOUT SECTION */
-
-.AboutSection {
-  display: flex;
+figure {
   width: 100%;
-  min-height: 1048px;
-  padding: 0px 48px;
-  margin-top: 120px;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  position: relative;
+  height: auto;
+  margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+  transition: filter 0.7s ease;
 }
 
-.About__Grid {
-  width: 1440px;
-  height: 1048px;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  z-index: -2;
-}
-
-.GridLines {
-  width: 1392px;
-  height: 1000px;
-  flex-shrink: 0;
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  
-}
-
-.GridLines path {
-  fill: var(--color-grid-lines);
-}
-
-.GridMainLines {
-  width: 1392px;
-  height: 1000px;
-  flex-shrink: 0;
-  position: absolute;
-  top: 24px;
-  left: 24px;
-  
-}
-
-.GridMainLines path {
-  fill: var(--color-grid-main);
-}
-
-.GridStroke {
-  width: 1440px;
-  height: 1048px;
-  flex-shrink: 0;
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  
-}
-
-.GridStroke path {
-  fill: var(--color-grid-lines);
-}
-
-.About__Container {
-  display: flex;
-  padding-top: 80px;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  position: relative;
-}
-
-.About__Title {
+.Work__ProjectImg {
   width: 100%;
+  height: auto;
 }
 
-.About__StickersContainer {
-  width: 1344px;
-  position: absolute;
-  left: 47%;
-  transform: translate(-50%);
-  top: 0px;
-  z-index: -1;
+.ImgBlur {
+  filter: blur(32px) brightness(48%);
+  transition: filter 0.5s ease;
 }
 
-.Sticker-User {
-  width: 92px;
-  height: 92px;
-  flex-shrink: 0;
-  top: 249px;
-  left: 734px;
-  position: absolute;
+.Work__Project h4 {
+  color: var(--color-text-secondary);
+  margin-bottom: 12px;
 }
 
-.Sticker-Smile {
-  width: 132px;
-  height: 132px;
-  flex-shrink: 0;
-  top: 427px;
-  left: 421px;
-  position: absolute;
-}
-
-.Sticker-Run {
-  width: 145px;
-  height: 114px;
-  flex-shrink: 0;
-  top: 421px;
-  left: 102px;
-  position: absolute;
-}
-
-.Sticker-Ukraine {
-  width: 122px;
-  height: 122px;
-  flex-shrink: 0;
-  top: 579px;
-  left: 1210px;
-  position: absolute;
-}
-
-.Sticker-Coin {
-  width: 105px;
-  height: 102px;
-  flex-shrink: 0;
-  top: 756px;
-  left: 662px;
-  position: absolute;
-}
-
-.Sticker-Buttons {
-  width: 132px;
-  height: 107px;
-  flex-shrink: 0;
-  top: 420px;
-  left: 263px;
-  position: absolute;
-}
-
-.Sticker-Google {
-  width: 147px;
-  height: 147px;
-  flex-shrink: 0;
-  top: 210px;
-  left: 573px;
-  position: absolute;
-}
-
-.Sticker-Exploring {
-  width: 200px;
-  height: 139px;
-  transform: rotate(-6.179deg);
-  flex-shrink: 0;
-  top: 459px;
-  left: 991px;
-  position: absolute;
-}
-
-.Sticker-Figma {
-  width: 104px;
-  height: 145px;
-  flex-shrink: 0;
-  transform: rotate(-5.472deg);
-  top: 433px;
-  left: 735px;
-  position: absolute;
-}
-
-.Sticker-8PX {
-  width: 147px;
-  height: 116px;
-  transform: rotate(6.869deg);
-  flex-shrink: 0;
-  top: 409px;
-  left: 1199px;
-  position: absolute;
-}
-
-.Sticker-Details {
-  width: 174px;
-  height: 164px;
-  flex-shrink: 0;
-  top: 601px;
-  left: 680px;
-  position: absolute;
-}
-
-.Sticker-Kosher {
-  width: 155px;
-  height: 93px;
-  flex-shrink: 0;
-  top: 657px;
-  left: 868px;
-  position: absolute;
-}
-
-.Sticker-Layout {
-  width: 148px;
-  height: 77px;
-  transform: rotate(3.136deg);
-  flex-shrink: 0;
-  top: 469px;
-  left: 868px;
-  position: absolute;
-}
-
-.Sticker-Vibes {
-  width: 118px;
-  height: 108px;
-  transform: rotate(4.104deg);
-  flex-shrink: 0;  
-  top: 293px;
-  left: 451px;
-  position: absolute;
-}
-
-.Sticker-Framer {
-  width: 88px;
-  height: 111px;
-  flex-shrink: 0;  
-  top: 394px;
-  left: 603px;
-  position: absolute;
-}
-
-.Sticker-Pixel {
-  width: 147px;
-  height: 60px;
-  transform: rotate(-6.313deg);
-  flex-shrink: 0;  
-  top: 343px;
-  left: 697px;
-  position: absolute;
-}
-
-.Sticker-CSS {
-  width: 78px;
-  height: 103px;
-  flex-shrink: 0;  
-  top: 796px;
-  left: 900px;
-  position: absolute;
-}
-
-.Sticker-HTML {
-  width: 75px;
-  height: 100px;
-  flex-shrink: 0;  
-  top: 782px;
-  left: 794px;
-  position: absolute;
-}
-
-.Sticker-Component {
-  width: 68px;
-  height: 68px;
-  flex-shrink: 0;  
-  top: 580px;
-  left: 835px;
-  position: absolute;
-}
-
-.Sticker-Idea {
-  width: 86px;
-  height: 77px;
-  transform: rotate(-15deg); 
-  top: 547px;
-  left: 906px;
-  position: absolute;
-}
-
-
-/* Stikers hover */
-.About__Stiker {
-  filter: grayscale(100%);
-  opacity: 70%;
-}
-
-.About__Intro:hover {
-  outline: 1px solid var(--color-accent);
-  background-color: var(--color-background-accent);
-}
-
-.About__Intro:hover .About__Intro__TextContainer {
-  border-top: 1px solid var(--color-accent);
-}
-
-.About__Personal:hover {
-  outline: 1px solid var(--color-accent);
-  background-color: var(--color-background-accent);
-}
-
-.About__Personal:hover .About__Personal__TextContainer {
-  border-top: 1px solid var(--color-accent);
-}
-
-.About__Experience:hover {
-  outline: 1px solid var(--color-accent);
-  background-color: var(--color-background-accent);
-}
-
-.About__Experience:hover .About__Experience__ListContainer {
-  border-top: 1px solid var(--color-accent);
-}
-
-.About__Experience:hover .About__Experience__CTAContainer {
-  border-top: 1px solid var(--color-accent);
-}
-
-.About__Job:hover {
-  outline: 1px solid var(--color-accent);
-  background-color: var(--color-background-accent);
-}
-
-.About__Job:hover .About__Job__TextContainer {
-  border-top: 1px solid var(--color-accent);
-}
-
-
-.About__InfoContainers {
-  width: 100%;
-  margin-top: 64px;
-  flex-shrink: 0;
-  position: relative;
-}
-
-
-/* About__Intro */
-
-.About__IntroContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 0px;
-  left: 0px;
-  position: absolute;
-}
-
-.About__Intro {
-  display: flex;
-  width: 432px;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border: 1px solid var(--color-divider);
-  background: var(--color-background);
-}
-
-.About__Intro__TitleContainer {
-  display: flex;
-  padding: 16px;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-.Intro__Title {
-  
-}
-
-.About__Intro__TextContainer {
-  display: flex;
-  padding: 16px;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  border-top: 1px solid var(--color-divider);
-}
-
-.Intro__Text {
-  
-}
-
-
-/* About__Personal */
-
-.About__PersonalContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 76px;
-  right: 114px;
-  position: absolute;
-}
-
-.About__Personal {
-  display: flex;
-  width: 432px;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border: 1px solid var(--color-divider);
-  background: var(--color-background);
-}
-
-.About__Personal__TitleContainer {
-  display: flex;
-  padding: 16px;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-.Personal__Title {
-  
-}
-
-.About__Personal__TextContainer {
-  display: flex;
-  padding: 16px;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  border-top: 1px solid var(--color-divider);
-}
-
-.Personal__Text {
-  
-}
-
-
-/* About__Experience */
-
-.About__ExperienceContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 289px;
-  left: 113px;
-  position: absolute;
-}
-
-.About__Experience {
-  display: flex;
-  width: 546px;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border: 1px solid var(--color-divider);
-  background: var(--color-background);
-}
-
-.About__Experience__TitleContainer {
-  display: flex;
-  padding: 16px;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-.Experience__Title {
-  
-}
-
-.About__Experience__ListContainer {
-  display: flex;
-  padding: 24px 16px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 24px;
-  align-self: stretch;
-  border-top: 1px solid var(--color-divider);
-}
-
-.About__Experience__ListItem {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 8px;
-  align-self: stretch;
-}
-
-.About__Experience__CTAContainer {
-  display: flex;
-  padding: 16px;
-  align-items: center;
-  gap: 16px;
-  align-self: stretch;
-  border-top: 1px solid var(--color-divider);
-  cursor: pointer;
-}
-
-.About__Experience__CTAIcon {
-  width: 16px;
-  height: 16px;
-}
-
-.About__Experience__CTAIcon path {
-  fill: var(--color-icon);
-}
-
-.About__Experience__CTAContainer:hover {
-  gap: 32px;
-  outline: 1px solid var(--color-accent);
-  border-top: 1px solid var(--color-background);
-}
-
-.About__Experience__CTAContainer:hover .Experience__CTA {
-  font-family: Satoshi-Italic;
-  color: var(--color-accent);
-}
-
-.About__Experience__CTAContainer:hover .About__Experience__CTAIcon path {
-  fill: var(--color-accent);
-}
-
-
-/* About__Job */
-
-.About__JobContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  top: 439px;
-  right: 0px;
-  position: absolute;
-}
-
-.About__Job {
-  display: flex;
-  width: 432px;
-  flex-direction: column;
-  align-items: flex-start;
-  flex-shrink: 0;
-  border: 1px solid var(--color-divider);
-  background: var(--color-background);
-}
-
-.About__Job__TitleContainer {
-  display: flex;
-  padding: 16px;
-  align-items: flex-start;
-  align-self: stretch;
-}
-
-.Job__Title {
-  
-}
-
-.About__Job__TextContainer {
-  display: flex;
-  padding: 16px;
-  flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
-  border-top: 1px solid var(--color-divider);
-}
-
-.Job__Text {
-  
-}
-
-
-/* CONNECT */
-
-.ConnectSection {  
-  display: flex;
-  margin-top: 120px;
-  padding: 40px 48px 160px 48px;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 64px;
-  align-self: stretch;
-}
-
-.Connect__Title {
-  
-}
-
-.Connect__ButtonsContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  align-self: stretch;
-}
-
-.Connect__ButtonsCards {
-  display: flex;
-  width: 1000px;
-  align-items: flex-start;
-  gap: 24px;
-}
-
-.Connect__Button {
-  display: flex;
-  height: 360px;
-  padding: 24px;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  flex: 1 0 0;
-  border: 1px solid var(--color-divider);
-}
-
-.Connect__Button:hover {
-  border: 1px solid var(--color-accent);
-  background-color: var(--color-background-accent);
-}
-
-.Connect__Button:hover .ConnectButton__CaptionText {
-  font-family:Satoshi-Italic;
-  color: var(--color-accent);
-}
-
-.Connect__Button:hover svg path {
-  fill: var(--color-accent);
-}
-
-.Connect__Button:hover .ConnectButton__IconText {
-  color: var(--color-accent);
-}
-
-.Connect__Button:hover .ConnectButton__Text {
-  font-family:Satoshi-Italic;
-  color: var(--color-accent);
-}
-
-.ConnectButton__Caption {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-}
-
-.ConnectButton__CaptionText {
-  
-}
-
-.ConnectButton__Content {
-  display: flex;
-  height: 247.5px;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  gap: 24px;
-  flex-shrink: 0;
-  align-self: stretch;
-}
-
-.ConnectButton__IconText {
-  font-family: Satoshi-Regular;
-  font-size: 120px;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: 0px;
+.Work__Project h3 {
   color: var(--color-text-primary);
 }
 
-.ConnectButton__TextContainer {
-  display: flex;
-  height: 56px;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-shrink: 0;
-  align-self: stretch;
+hr {
+  width: 100%;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: solid;
+  border-top: 1px;
+  border-color: var(--color-divider);
 }
-
-.ConnectButton__Text {
-  flex: 1 0 0;
-  text-align: center;
-}
-
-/* FOOTER */
 
 footer {
-  height: 120px;  
   display: flex;
-  padding: 0px 48px 0px 48px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 16px;
+  gap: 120px;
   align-self: stretch;
+  margin: 80px 0px 40px 0px;
 }
 
-.Divider {
-  width: 100%;
-  height:1px;
-  border-width:0;
-  background-color: var(--color-divider);
-}
-
-.Footer__ContentContainer {
+.Footer__Contact {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   align-self: stretch;
 }
 
-.Footer__LogoContainer {
-  width: 160px;
-  height: 48px;
+.Footer__ContactMail {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 
-.Footer__Logo {
-  width: 48px;
-  height: 48px;
-  box-shadow: 0px 0px 0px transparent;
-  border: 0px solid transparent;
-  text-shadow: 0px 0px 0px transparent;
+footer h5 {
+  color: var(--color-text-secondary);
 }
 
-.Footer__BrandNameText {
-  width: 160px;
-  text-align: center;
+.Footer__Contact a {
+  color: var(--color-text-primary);
+  text-transform: uppercase;
 }
 
-.Footer__CodedbyText {
-  width: 160px;
-  text-align: center;
+.Footer__ContactSocial {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
 
-
-
-
-/* ----- BREAKPOINTS -----*/
-
-
-/* 1200 BREAKPOINT */
-
-@media (width <= 1200px) {
-  .ProjectCard {
-    display: flex;
-    flex-direction: column-reverse;
-    align-self: stretch;
-  }
-  
-  .Description {
-    width: 100%;
-  }
-  
-  .ImgContainer {
-    align-self: stretch;
-    flex: 1 1 auto;
-  }
-  
-  .About__IntroContainer {
-    display: flex;
-    flex-direction: column;
-    position: static;
-    align-self: stretch;
-    align-items: flex-start;
-  }
-  
-  .About__PersonalContainer {
-    display: flex;
-    flex-direction: column;
-    position: static;
-    align-self: stretch;
-    align-items: flex-end;
-  }
-
-  .About__ExperienceContainer {
-    display: flex;
-    flex-direction: column;
-    position: static;
-    align-self: stretch;
-    align-items: flex-start;
-  }
-
-  .About__JobContainer {
-    display: flex;
-    flex-direction: column;
-    position: static;
-    align-self: stretch;
-    align-items: flex-end;
-  }
-  
-  .About__Experience {
-    width: 432px;
-  }
+.Footer__ContactSocial img {
+  width: 0.84vw;
+  margin-left: 6px;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.24s;
 }
 
-/* 1160 BREAKPOINT */
-@media (width <= 1160px) {
-  .HeroSection__Text {
-    width: auto;
-    align-self: stretch;
-  }
+.Footer__ContactSocial a:hover img {
+  margin-bottom: 2px;
+  transition-timing-function: ease-in-out;
+  transition-duration: 0.16s;
 }
 
-/* 1116 BREAKPOINT */
-@media (width <= 1116px) {
-  #CoonectButtons {
-    width: auto;
-    align-self: stretch;    
-  }
+.Footer__Info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
 }
 
-/* 960 BREAKPOINT */
-@media (width <= 960px) {
-  .About__InfoContainers {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-  }
-  
-  .About__Intro {
-    width: 100%;
-  }
-
-  .About__Personal {
-    width: 100%;
-  }
-
-  .About__Experience {
-    width: 100%;
-  }
-
-  .About__Job {
-    width: 100%;
-  }
+.Footer__Info p {
+  color: var(--color-text-primary);
 }
 
-/* 904 BREAKPOINT */
-@media (width <= 904px) {
-  .Connect__ButtonsCards {
-    flex-direction: column;
-  }
-  
-  .Connect__Button {
-    align-self: stretch;
-  }
-}
-
-/* 690 BREAKPOINT */
-@media (width <= 690px) {
-  h1 {
-    font-size: 32px;
-    line-height: 40px;
-  }
-
-  h2 {
-    font-size: 32px;
-    line-height: 38px;
-}
-
-  h3 {
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .BodyText {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .LinkText {
-    font-size: 18px;
-    line-height: 20px;
-  }
-
-  .CaptionText {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .CaptionSmallText {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .ProjectCard__Name {
-    padding: 16px;
-    }
-  
-  .ProjectCard__DescriptionContainer {
-    padding: 16px;
-    }
-  
-  .ProjectCard__CompanyContainer {
-    padding: 16px;
-    }
-  
-  .ProjectCard__RoleContainer {
-    padding: 16px;
-    }
-  
-  .ProjectCard__CtaContainer {
-    padding: 16px;
-    }
-}
-
-
-/* 600 BREAKPOINT */
-@media (width <= 600px) {
-  footer {
-    height: auto;
-    margin-bottom: 24px;
-  }
-  
-  .Footer__ContentContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 24px;
-    align-self: stretch;    
-  }
-  
-  .Footer__Logo {
-    width: 48px;
-    height: 48px;
-    box-shadow: 0px 0px 0px transparent;
-    border: 0px solid transparent;
-    text-shadow: 0px 0px 0px transparent;
-    background-color: var(--color-text-secondary);
-}
-  
-  .Footer__BrandNameText {
-    text-align: left;
-  }
-  
-  .Footer__CodedbyText {
-    text-align: left;
-  }
-  
-  .ImgContainer {
-    height: 365px;
-  }
-  
-}
-
-
-/* 560 BREAKPOINT */
-@media(max-width:560px){
-  .MenuHamburger {
-    display: block;
-  }
-  
-  .MenuHamburger.active .MenuBar:nth-child(2){
-    opacity: 0;
-  }
-  .MenuHamburger.active .MenuBar:nth-child(1){
-    transform: translateY(8px) rotate(45deg);
-  }
-  .MenuHamburger.active .MenuBar:nth-child(3){
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  
-  .TopNav__MenuLinks {
-    position: fixed;
-    top: -100%;
-    right: 0;
-    left: 0;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-    height: calc(100vh - 114px);
-    padding: 40px 40px 0px 40px;
-    transition: 0.7s;
-    background-color: var(--color-background);
-  }
-  
-  .TopNav__MenuLinks.active {
-    top: 80px;
-    justify-content: start;
-  }
-  
-  .TopNav__LinkContainer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    align-self: stretch;
-    width: auto;
-    padding: 12px 0px 20px 0px;
-    border: 0px;
-    border-bottom: 1px solid var(--color-divider);
-  }
-  
-  .TopNav__MenuLinks .TopNav__LinkContainer:nth-child(3){
-    border: 0px;
-  }
-  
-  .TopNav__LinkContainer svg {
-    display: block;
-  }
-  
-  .TopNav {
-    padding: 24px 24px 0px 24px;
-  }
-
-  .HeroSection {
-    padding: 0px 24px;
-  }
-
-  .ProjectsSection {
-    padding: 0px 24px;
-  }
-  
-  .AboutSection {
-    padding: 0px 24px;
-  }
-
-  .ConnectSection {
-    padding: 40px 24px 160px 24px;
-  }
-
-  footer {
-    padding-bottom: 0px 24px 0px 24px;
-  }
-}
-
-
-/* 380 BREAKPOINT */
-@media (width <= 380px) {
-  .ImgContainer {
-    height: 250px;
-  }
-}
-
-/* 320 BREAKPOINT */
-@media (width <= 320px) {
-  h1 {
-    font-size: 24px;
-    line-height: 32px;
-  }
-
-  h2 {
-    font-size: 24px;
-    line-height: 32px;
-}
-
-  h3 {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .BodyText {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .LinkText {
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .CaptionText {
-    font-size: 14px;
-    line-height: 20px;
-  }
-
-  .CaptionSmallText {
-    font-size: 14px;
-    line-height: 20px;
-  }
-  .ProjectCard__Name {
-    padding: 12px;
-    }
-  
-  .ProjectCard__DescriptionContainer {
-    padding: 12px;
-    }
-  
-  .ProjectCard__CompanyContainer {
-    padding: 12px;
-    }
-  
-  .ProjectCard__RoleContainer {
-    padding: 12px;
-    }
-  
-  .ProjectCard__CtaContainer {
-    padding: 12px;
-    }
+.Footer__InfoAbout {
+  width: calc(50% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
 }
