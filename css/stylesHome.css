@@ -366,7 +366,7 @@ footer h5 {
   color: var(--color-text-secondary);
 }
 
-.Footer__Contact a {
+.Footer__Contact a,p {
   color: var(--color-text-primary);
   text-transform: uppercase;
 }
