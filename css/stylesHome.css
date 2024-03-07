@@ -154,13 +154,6 @@ main {
   z-index: -2;
 }
 
-.BackgroundImg-Bottom {
-  bottom: 0px;
-  width: 100%;
-  position: fixed;
-  z-index: -2;
-}
-
 
 /* CONTENT */
 
@@ -367,6 +360,18 @@ footer h5 {
 }
 
 .Footer__Contact a {
+  color: var(--color-text-primary);
+  text-transform: uppercase;
+}
+
+.EmailTextButton {
+  padding: 0;
+  border: none;
+  background: none;
+  cursor:pointer;
+}
+
+.EmailText {
   color: var(--color-text-primary);
   text-transform: uppercase;
 }
